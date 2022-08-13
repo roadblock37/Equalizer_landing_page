@@ -67,7 +67,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
+/* intro section */
 /* intro header */
 .intro h1 {
     width: 80%;
@@ -78,6 +78,10 @@ body {
 .intro p {
     line-height: 1.75rem;
     width: 100%;
-    padding-right: 0.75rem;
-    
+    padding-right: 0.75rem; 
+}
+
+/* download section */
+.download-section {
+    grid-column: 1 / -1;
 }
