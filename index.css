@@ -2,10 +2,12 @@
     /* primary text colors */
     --primaryText: #191826;
     --secondaryText: #fcfaf9;
+    /* button colors */
     --iosBtnBckgrnd: #191826;
     --iosBtnHover: #66E2DC;
     --droidBtnBckgrnd: #fcfaf9;
     --droidBtnHover: #FFB964;
+    /* download card background */
     --cardBckgrnd: #FA7453;
 
 }
@@ -15,6 +17,7 @@
     line-height: 1.75px;
     color: var(--primaryText);
     font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -32,6 +35,49 @@ h2 {
     line-height: 3.25rem;
 }
 
-.body {
+/* create the body grid */
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(12, 1fr); */
+    background-image: url(./assets/bg-main-mobile.png);
+    
+}
+
+/* logo image at the top of the page */
+.logo {
+    margin-top: 3rem;
+    margin-left: 2rem;
+
+}
+
+/* pattern image at top of page is hidden on mobile */
+.pattern1 {
+    display: none;
+}
+
+.intro {
+    grid-column: 1 / span 6;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* intro header */
+.intro h1 {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.intro p {
+    line-height: 1.75rem;
+    width: 100%;
+    padding-right: 0.75rem;
     
 }
