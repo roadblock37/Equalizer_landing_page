@@ -1,0 +1,37 @@
+:root {
+    /* primary text colors */
+    --primaryText: #191826;
+    --secondaryText: #fcfaf9;
+    --iosBtnBckgrnd: #191826;
+    --iosBtnHover: #66E2DC;
+    --droidBtnBckgrnd: #fcfaf9;
+    --droidBtnHover: #FFB964;
+    --cardBckgrnd: #FA7453;
+
+}
+
+* {
+    font-size: 16px;
+    line-height: 1.75px;
+    color: var(--primaryText);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'IBM Plex Sans Bold';
+}
+
+h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+}
+
+.body {
+    
+}
