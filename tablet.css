@@ -65,10 +65,11 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 4rem;
+    margin-bottom: 12rem;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -83,4 +84,109 @@ body {
     line-height: 1.75rem;
     width: 80%;
     padding-right: 0.75rem; 
+}
+
+    /* download section */
+/* download section container */
+.download-section {
+    grid-column: 1 / -1;
+    background-color: var(--primaryText);
+    background-image: url(./assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    margin-top: 6rem;
+
+}
+
+/* phone image in download section */
+.phoneImage {
+    width: 40%;
+    height: auto;
+    margin-top: -20%;
+    margin-left: 5%;
+    margin-bottom: 30%;
+}
+
+.download-card {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--cardBckgrnd);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    margin-top: -65%;
+    margin-left: 30%;
+    width: 54%;
+    z-index: 1;
+}
+
+.download-card, .download-section {
+    border-radius: 0.75rem;
+}
+
+/* text color in the download card */
+.download-card h2 {
+    color: var(--secondaryText);
+}
+
+.download-card p {
+    color: var(--secondaryText);
+}
+
+/* paragraph in download card */
+.download-card p {
+    line-height: 1.75rem;
+}
+
+/* price per month flex container in the download card */
+.price-flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-flexContainer h2 {
+    padding-right: 1rem;
+}
+
+    /* download buttons */
+button {
+    border-radius: 0.75rem;
+    height: 4rem;
+    vertical-align: middle;
+}
+
+/* spacing between image and text in buttons */
+button img {
+    padding-right: 1rem;
+}
+
+/* ios download button */
+.iosBtn {
+    background-color: var(--iosBtnBckgrnd);
+    color: var(--secondaryText);
+    margin-bottom: 1rem;
+}
+
+/* android button */
+.droidBtn {
+    background-color: var(--droidBtnBckgrnd);
+    color: var(--primaryText);
+}
+
+/* changes cursor to a pointer on hover */
+button:hover {
+    cursor: pointer;
+}
+
+/* button hover */
+.droidBtn:hover {
+    background-color: var(--droidBtnHover);
+}
+
+.iosBtn:hover {
+    background-color: var(--iosBtnHover);
 }

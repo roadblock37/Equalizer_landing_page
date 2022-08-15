@@ -83,7 +83,7 @@ body {
 }
 
     /* download section */
-    /* download section container */
+/* download section container */
 .download-section {
     grid-column: 1 / span 6;
     display: flex;
