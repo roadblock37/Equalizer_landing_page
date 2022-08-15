@@ -41,6 +41,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-image: url(./assets/bg-main-tablet.png);
+    background-repeat: repeat;
     
 }
 

@@ -42,6 +42,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-image: url(./assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
     
 }
 

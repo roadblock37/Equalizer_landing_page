@@ -41,13 +41,14 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
     
 }
 
 /* logo image at the top of the page */
 .logo {
     margin-top: 4rem;
-    margin-left: 2rem;
+    margin-left: 10rem;
 
 }
 
@@ -61,9 +62,9 @@ body {
 
     /* intro section */
     .intro {
-        grid-column: 1 / -1;
+        grid-column: 1 / span 10;
         width: 72%;
-        margin-left: 1rem;
+        margin-left: 10rem;
         margin-right: 1rem;
         margin-top: 4rem;
         padding-left: 1rem;
@@ -75,13 +76,161 @@ body {
     
     /* intro header */
     .intro h1 {
-        width: 50%;
-        font-size: 3rem;
+        width: 100%;
+        font-size: 5.5rem;
         line-height: 4rem;
     }
     
     .intro p {
-        line-height: 1.75rem;
-        width: 80%;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        width: 100%;
         padding-right: 0.75rem; 
     }
+
+    /* download section */
+/* download section container */
+.download-section {
+    grid-column: 1 / -1;
+    background-color: var(--primaryText);
+    background-image: url(./assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+
+/* phone image in download section */
+.phoneImage {
+    width: 30%;
+    height: auto;
+    margin-top: -20%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.download-card {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--cardBckgrnd);
+    padding: 3rem;
+    margin-top: -30%;
+    margin-left: 45%;
+    width: 446px;
+    height: 625px;
+    z-index: 1;
+}
+
+.download-card, .download-section {
+    border-radius: 0.75rem;
+}
+
+/* text color in the download card */
+.download-card h2 {
+    color: var(--secondaryText);
+}
+
+.download-card p {
+    color: var(--secondaryText);
+}
+
+/* paragraph in download card */
+.download-card p {
+    line-height: 1.75rem;
+}
+
+/* price per month flex container in the download card */
+.price-flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-flexContainer h2 {
+    padding-right: 1rem;
+}
+
+    /* download buttons */
+button {
+    border-radius: 0.75rem;
+    height: 4rem;
+    vertical-align: middle;
+}
+
+/* spacing between image and text in buttons */
+button img {
+    padding-right: 1rem;
+}
+
+/* ios download button */
+.iosBtn {
+    background-color: var(--iosBtnBckgrnd);
+    color: var(--secondaryText);
+    margin-bottom: 1rem;
+}
+
+/* android button */
+.droidBtn {
+    background-color: var(--droidBtnBckgrnd);
+    color: var(--primaryText);
+}
+
+/* changes cursor to a pointer on hover */
+button:hover {
+    cursor: pointer;
+}
+
+/* button hover */
+.droidBtn:hover {
+    background-color: var(--droidBtnHover);
+}
+
+.iosBtn:hover {
+    background-color: var(--iosBtnHover);
+}
+
+ /* footer */
+ .footer {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer paragraph */
+.footer p {
+    line-height: 1.75rem;
+    width: 30%;
+}
+
+/* social icons in footer */
+.social-flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* email link in footer */
+.email {
+    font-weight: bold;
+}
+
+.email:hover {
+    cursor: pointer;
+}
