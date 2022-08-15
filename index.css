@@ -12,6 +12,8 @@
 
 }
 
+
+
 * {
     font-size: 16px;
     line-height: 1.75px;
@@ -39,7 +41,6 @@ h2 {
 body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: repeat(12, 1fr); */
     background-image: url(./assets/bg-main-mobile.png);
     
 }
