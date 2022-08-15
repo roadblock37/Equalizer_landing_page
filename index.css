@@ -93,6 +93,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: top;
+    margin-top: 6rem;
 
 }
 
@@ -100,4 +101,41 @@ body {
 .phoneImage {
     width: 50%;
     height: auto;
+    margin-top: -20%;
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--cardBckgrnd);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 6rem;
+}
+
+/* text color in the download card */
+.download-card h2 {
+    color: var(--secondaryText);
+}
+
+.download-card p {
+    color: var(--secondaryText);
+}
+
+/* paragraph in download card */
+.download-card p {
+    line-height: 1.75rem;
+}
+
+/* price per month flex container in the download card */
+.price-flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-flexContainer h2 {
+    padding-right: 1rem;
 }
