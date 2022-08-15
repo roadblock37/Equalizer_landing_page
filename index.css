@@ -115,6 +115,10 @@ body {
     margin-top: 6rem;
 }
 
+.download-card, .download-section {
+    border-radius: 0.75rem;
+}
+
 /* text color in the download card */
 .download-card h2 {
     color: var(--secondaryText);
@@ -138,4 +142,43 @@ body {
 
 .price-flexContainer h2 {
     padding-right: 1rem;
+}
+
+    /* download buttons */
+button {
+    border-radius: 0.75rem;
+    height: 4rem;
+    vertical-align: middle;
+}
+
+/* spacing between image and text in buttons */
+button img {
+    padding-right: 1rem;
+}
+
+/* ios download button */
+.iosBtn {
+    background-color: var(--iosBtnBckgrnd);
+    color: var(--secondaryText);
+    margin-bottom: 1rem;
+}
+
+/* android button */
+.droidBtn {
+    background-color: var(--droidBtnBckgrnd);
+    color: var(--primaryText);
+}
+
+/* changes cursor to a pointer on hover */
+button:hover {
+    cursor: pointer;
+}
+
+/* button hover */
+.droidBtn:hover {
+    background-color: var(--droidBtnHover);
+}
+
+.iosBtn:hover {
+    background-color: var(--iosBtnHover);
 }
